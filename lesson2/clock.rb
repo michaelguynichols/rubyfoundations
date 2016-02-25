@@ -25,7 +25,7 @@ class Time
   end
 
   def wrap_clock
-    if @total_minutes > (24 * 60)
+    if @total_minutes >= (24 * 60)
       @total_minutes = @total_minutes % 60
     elsif @total_minutes < 0
       @total_minutes = @total_minutes + (24 * 60)
